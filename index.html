@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ამინდი</title>
+     <link rel="stylesheet" href="styles/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="menu">
+          <div class="showhidebtn">
+               <i class="fa-solid fa-angle-up"></i>
+          </div>
+          <div class="weather menu_btn active">
+               <div class="icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+               <div class="text">ამინდი</div>
+          </div>
+          <div class="city menu_btn">
+               <div class="icon"><i class="fa-solid fa-list"></i></div>
+               <div class="text">ქალაქები</div>
+          </div>
+          <div class="location menu_btn">
+               <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+               <div class="text">ლოკაცია</div>
+          </div>
+          <div class="settings menu_btn">
+               <div class="icon"><i class="fa-solid fa-gear"></i></div>
+               <div class="text">პარამეტრები</div>
+          </div>
+     </div>
+
+     <div class="container">
+          <div class="search">
+               <input type="text" name="search" id="search" placeholder="ძებნა..">
+               <span class="search_icon">
+                    <i class="fa-solid fa-search"></i>
+               </span>
+          </div>
+          <div class="weather_container">
+               <!-- left side  -->
+               <div class="left_side">
+                    <div class="weather">
+                         <div class="current_weather">
+                              <div class="options">
+                                   <div class="current">
+                                        <div class="city"><h1 class="cityname">თბილისი</h1></div>
+                                        <div class="current_weather_options">
+                                             <h5 class="description">ძლიერი წვიმა</h5>
+                                        </div>
+                                   </div>
+                                   <div class="temp">
+                                        <h1 class="temperature">15<sup>o</sup></h1>
+                                   </div>
+                              </div>
+                              <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="">
+                         </div>
+                    </div>
+                    <div class="conditions">
+                         <h3 class="conditions_title">მეტი...</h3>
+                         <div class="card_container">
+                              <div class="card wind">
+                                   <div class="card_title">
+                                        <i class="fa-solid fa-wind"></i>
+                                        ქარი
+                                   </div>
+                                   <div class="card_desc">
+                                        <p class="desc_text">0.2კმ/სთ</p>
+                                   </div>
+                              </div>
+                              <div class="card humidity">
+                                   <div class="card_title">
+                                        <i class="fa-solid fa-shower"></i>
+                                        ტენიანობა
+                                   </div>
+                                   <div class="card_desc">
+                                        <p class="desc_text">50%</p>
+                                   </div>
+                              </div>
+                              <div class="card wind">
+                                   <div class="card_title">
+                                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                                        შეგრძნება
+                                   </div>
+                                   <div class="card_desc">
+                                        <p class="desc_text">30<sup>o</sup></p>
+                                   </div>
+                              </div>
+                              <div class="card wind">
+                                   <div class="card_title">
+                                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                                        მინ ტემპერატურა
+                                   </div>
+                                   <div class="card_desc">
+                                        <p class="desc_text">5<sup>o</sup></p>
+                                   </div>
+                              </div>
+                              <div class="card wind">
+                                   <div class="card_title">
+                                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                                        მაქს ტემპერატურა
+                                   </div>
+                                   <div class="card_desc">
+                                        <p class="desc_text">16<sup>o</sup></p>
+                                   </div>
+                              </div>
+                              <div class="card wind">
+                                   <div class="card_title">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        წნევა
+                                   </div>
+                                   <div class="card_desc">
+                                        <p class="desc_text">1015</p>
+                                   </div>
+                              </div>
+                              <div class="card wind">
+                                   <div class="card_title">
+                                        <i class="fa-solid fa-sun"></i>
+                                        მზის ჩასვლა
+                                   </div>
+                                   <div class="card_desc">
+                                        <p class="desc_text">18:00</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <!-- right side  -->
+               <div class="right_side">
+                    <h3 class="right_side_title">7 დღის პროგნოზი</h3>
+                    <div class="one_week_conditions">
+                         <div class="condition_card">
+                              <h4 class="day">დღეს</h4>
+                              <div class="card_right">
+                                   <div class="icon_condition">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="">
+                                        <h4>მზიანი</h4>
+                                   </div>
+                                   <div class="day_night_temp">
+                                        <span class="day_temp">20</span>/
+                                        <span class="night_temp">5</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="condition_card">
+                              <h4 class="day">სამ</h4>
+                              <div class="card_right">
+                                   <div class="icon_condition">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="">
+                                        <h4>მზიანი</h4>
+                                   </div>
+                                   <div class="day_night_temp">
+                                        <span class="day_temp">20</span>/
+                                        <span class="night_temp">5</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="condition_card">
+                              <h4 class="day">ოთხ</h4>
+                              <div class="card_right">
+                                   <div class="icon_condition">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="">
+                                        <h4>მზიანი</h4>
+                                   </div>
+                                   <div class="day_night_temp">
+                                        <span class="day_temp">20</span>/
+                                        <span class="night_temp">5</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="condition_card">
+                              <h4 class="day">ხუთ</h4>
+                              <div class="card_right">
+                                   <div class="icon_condition">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="">
+                                        <h4>მზიანი</h4>
+                                   </div>
+                                   <div class="day_night_temp">
+                                        <span class="day_temp">20</span>/
+                                        <span class="night_temp">5</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="condition_card">
+                              <h4 class="day">პარ</h4>
+                              <div class="card_right">
+                                   <div class="icon_condition">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="">
+                                        <h4>მზიანი</h4>
+                                   </div>
+                                   <div class="day_night_temp">
+                                        <span class="day_temp">20</span>/
+                                        <span class="night_temp">5</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="condition_card">
+                              <h4 class="day">შაბ</h4>
+                              <div class="card_right">
+                                   <div class="icon_condition">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="">
+                                        <h4>მზიანი</h4>
+                                   </div>
+                                   <div class="day_night_temp">
+                                        <span class="day_temp">20</span>/
+                                        <span class="night_temp">5</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="condition_card">
+                              <h4 class="day">კვ</h4>
+                              <div class="card_right">
+                                   <div class="icon_condition">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="">
+                                        <h4>მზიანი</h4>
+                                   </div>
+                                   <div class="day_night_temp">
+                                        <span class="day_temp">20</span>/
+                                        <span class="night_temp">5</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="app.js"></script>
+</body>
+</html>
